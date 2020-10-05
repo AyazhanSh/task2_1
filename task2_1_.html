@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+
+</head>
+
+<body>
+	<script>
+		
+		let tweet = 'Прохожу курс на #coursera по #javascript';
+
+		let result = []
+
+		let tweets = tweet.split(' ')
+
+		tweets.forEach(element => {
+
+			if (element.indexOf('#') !== -1) {
+
+				return result.push(element.slice(1));
+
+			}
+
+		})
+
+		console.log(result)
+	</script>
+
+
+
+	</div>
+
+
+</body>
+
+</html>
